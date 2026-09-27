@@ -1,0 +1,711 @@
+/* =========================================================
+WIRELAB ACCOUNTS
+ACCOUNTS PAGE CSS ONLY
+========================================================= */
+
+/* =========================================================
+PAGE BACKGROUND
+========================================================= */
+
+html {
+background: #07131a;
+}
+
+body {
+
+margin: 0;
+
+background:
+    radial-gradient(
+        circle at 50% 0%,
+        rgba(20, 100, 130, .28),
+        transparent 45%
+    ),
+    #07131a;
+
+color: white;
+
+}
+
+/* =========================================================
+ACCOUNT PAGE
+========================================================= */
+
+.account-page {
+
+width: min(1100px, calc(100% - 32px));
+
+margin: 40px auto 80px;
+
+}
+
+/* =========================================================
+ACCOUNT HERO
+========================================================= */
+
+.account-hero {
+
+display: flex;
+
+align-items: center;
+
+gap: 22px;
+
+padding: 28px;
+
+margin-bottom: 22px;
+
+background:
+    linear-gradient(
+        135deg,
+        rgba(15, 80, 100, .32),
+        rgba(5, 20, 28, .72)
+    );
+
+border: 1px solid rgba(80, 210, 235, .28);
+
+border-radius: 20px;
+
+box-shadow:
+    0 15px 40px rgba(0, 0, 0, .35),
+    inset 0 1px 0 rgba(255, 255, 255, .06);
+
+backdrop-filter: blur(14px);
+
+}
+
+.account-icon {
+
+width: 72px;
+
+height: 72px;
+
+flex-shrink: 0;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+background:
+    radial-gradient(
+        circle,
+        rgba(70, 200, 225, .22),
+        rgba(10, 35, 45, .7)
+    );
+
+border: 1px solid rgba(90, 220, 240, .4);
+
+color: #8be8f7;
+
+font-size: 36px;
+
+box-shadow:
+    0 0 25px rgba(60, 200, 230, .12);
+
+}
+
+.account-label {
+
+display: block;
+
+margin-bottom: 6px;
+
+color: #79d9e9;
+
+font-size: 12px;
+
+font-weight: 700;
+
+letter-spacing: 2px;
+
+}
+
+.account-hero h2 {
+
+margin: 0 0 8px;
+
+font-size: clamp(25px, 4vw, 38px);
+
+font-weight: 700;
+
+}
+
+.account-hero p {
+
+margin: 0;
+
+max-width: 650px;
+
+color: rgba(255, 255, 255, .68);
+
+line-height: 1.6;
+
+}
+
+/* =========================================================
+ACCOUNT CARDS
+========================================================= */
+
+.account-card {
+
+margin-bottom: 22px;
+
+padding: 26px;
+
+background:
+    linear-gradient(
+        145deg,
+        rgba(18, 48, 60, .58),
+        rgba(5, 17, 24, .78)
+    );
+
+border: 1px solid rgba(70, 190, 220, .22);
+
+border-radius: 18px;
+
+box-shadow:
+    0 12px 35px rgba(0, 0, 0, .28),
+    inset 0 1px 0 rgba(255, 255, 255, .04);
+
+backdrop-filter: blur(12px);
+
+}
+
+/* =========================================================
+CARD HEADING
+========================================================= */
+
+.card-heading {
+
+display: flex;
+
+align-items: center;
+
+gap: 14px;
+
+margin-bottom: 24px;
+
+}
+
+.card-icon {
+
+width: 42px;
+
+height: 42px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+flex-shrink: 0;
+
+border-radius: 12px;
+
+background: rgba(50, 190, 220, .09);
+
+border: 1px solid rgba(80, 210, 235, .22);
+
+color: #7ce2f2;
+
+font-size: 20px;
+
+}
+
+.card-heading h3 {
+
+margin: 0 0 4px;
+
+font-size: 15px;
+
+letter-spacing: 1.5px;
+
+}
+
+.card-heading p {
+
+margin: 0;
+
+color: rgba(255, 255, 255, .48);
+
+font-size: 13px;
+
+}
+
+/* =========================================================
+PROFILE
+========================================================= */
+
+.profile-content {
+
+display: flex;
+
+align-items: center;
+
+gap: 16px;
+
+padding: 18px;
+
+margin-bottom: 18px;
+
+background: rgba(0, 0, 0, .16);
+
+border: 1px solid rgba(255, 255, 255, .06);
+
+border-radius: 14px;
+
+}
+
+.profile-avatar {
+
+width: 58px;
+
+height: 58px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+flex-shrink: 0;
+
+border-radius: 50%;
+
+background: rgba(65, 200, 225, .1);
+
+border: 1px solid rgba(85, 215, 235, .28);
+
+color: #8be8f7;
+
+font-size: 28px;
+
+}
+
+.profile-info {
+
+display: flex;
+
+flex-direction: column;
+
+gap: 6px;
+
+}
+
+.profile-name {
+
+font-size: 17px;
+
+font-weight: 600;
+
+}
+
+.profile-status {
+
+color: #73d8a1;
+
+font-size: 10px;
+
+font-weight: 700;
+
+letter-spacing: 1.5px;
+
+}
+
+/* =========================================================
+ACCOUNT BUTTON
+========================================================= */
+
+.account-button {
+
+width: 100%;
+
+padding: 13px 18px;
+
+border: 1px solid rgba(90, 210, 230, .28);
+
+border-radius: 10px;
+
+background: rgba(50, 180, 210, .08);
+
+color: #8be8f7;
+
+font-size: 12px;
+
+font-weight: 700;
+
+letter-spacing: 1.2px;
+
+cursor: pointer;
+
+transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+
+}
+
+.account-button {
+
+background: rgba(50, 190, 220, .16);
+
+border-color: rgba(100, 225, 240, .5);
+
+}
+
+.account-button {
+
+transform: scale(.99);
+
+}
+
+/* =========================================================
+PROGRESS GRID
+========================================================= */
+
+.progress-grid {
+
+display: grid;
+
+grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+gap: 14px;
+
+}
+
+.progress-item {
+
+padding: 17px;
+
+background: rgba(0, 0, 0, .16);
+
+border: 1px solid rgba(255, 255, 255, .06);
+
+border-radius: 13px;
+
+}
+
+.progress-item-top {
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+gap: 12px;
+
+margin-bottom: 12px;
+
+}
+
+.progress-item-top span {
+
+color: rgba(255, 255, 255, .7);
+
+font-size: 11px;
+
+font-weight: 700;
+
+letter-spacing: 1.3px;
+
+}
+
+.progress-item-top strong {
+
+color: #8be8f7;
+
+font-size: 12px;
+
+}
+
+/* =========================================================
+PROGRESS BAR
+========================================================= */
+
+.progress-bar {
+
+width: 100%;
+
+height: 6px;
+
+overflow: hidden;
+
+background: rgba(255, 255, 255, .07);
+
+border-radius: 20px;
+
+}
+
+.progress-fill {
+
+width: 0%;
+
+height: 100%;
+
+border-radius: inherit;
+
+background:
+    linear-gradient(
+        90deg,
+        #268da5,
+        #75e1f1
+    );
+
+box-shadow:
+    0 0 12px rgba(80, 215, 235, .25);
+
+transition: width .4s ease;
+
+}
+
+/* =========================================================
+SETTINGS
+========================================================= */
+
+.settings-list {
+
+display: flex;
+
+flex-direction: column;
+
+gap: 9px;
+
+}
+
+.settings-button {
+
+width: 100%;
+
+display: flex;
+
+align-items: center;
+
+gap: 14px;
+
+padding: 15px 16px;
+
+border: 1px solid rgba(255, 255, 255, .06);
+
+border-radius: 13px;
+
+background: rgba(0, 0, 0, .14);
+
+color: white;
+
+text-align: left;
+
+cursor: pointer;
+
+transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+
+}
+
+.settings-button {
+
+background: rgba(50, 180, 210, .08);
+
+border-color: rgba(80, 210, 235, .2);
+
+}
+
+.settings-button {
+
+transform: scale(.995);
+
+}
+
+.settings-symbol {
+
+width: 34px;
+
+height: 34px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+flex-shrink: 0;
+
+border-radius: 9px;
+
+background: rgba(60, 190, 220, .08);
+
+color: #7ddfed;
+
+font-size: 17px;
+
+}
+
+.settings-text {
+
+display: flex;
+
+flex-direction: column;
+
+gap: 4px;
+
+flex: 1;
+
+}
+
+.settings-text strong {
+
+font-size: 13px;
+
+}
+
+.settings-text small {
+
+color: rgba(255, 255, 255, .43);
+
+font-size: 11px;
+
+}
+
+.settings-arrow {
+
+color: rgba(255, 255, 255, .35);
+
+font-size: 22px;
+
+}
+
+/* =========================================================
+RESET BUTTON
+========================================================= */
+
+.danger-button .settings-symbol {
+
+color: #e4b56b;
+
+}
+
+.danger-button {
+
+border-color: rgba(225, 170, 90, .28);
+
+}
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 700px) {
+
+.account-page {
+
+    width: min(
+        100% - 22px,
+        600px
+    );
+
+    margin-top: 25px;
+
+}
+
+
+.account-hero {
+
+    padding: 22px;
+
+}
+
+
+.account-card {
+
+    padding: 20px;
+
+}
+
+}
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+.account-page {
+
+    width: calc(100% - 16px);
+
+    margin-top: 18px;
+
+    margin-bottom: 50px;
+
+}
+
+
+.account-hero {
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border-radius: 16px;
+
+}
+
+
+.account-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    font-size: 26px;
+
+}
+
+
+.account-hero h2 {
+
+    font-size: 24px;
+
+}
+
+
+.account-hero p {
+
+    font-size: 13px;
+
+}
+
+
+.account-card {
+
+    padding: 17px;
+
+    border-radius: 15px;
+
+}
+
+
+.progress-grid {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.profile-content {
+
+    padding: 14px;
+
+}
+
+}
